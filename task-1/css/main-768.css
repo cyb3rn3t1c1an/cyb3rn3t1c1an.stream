@@ -1,0 +1,135 @@
+h1 {
+    font-size: 40px;
+}
+
+.container {
+    width: 768px;
+    height: auto;
+}
+
+.about__role {
+    font-size: 24px;
+    margin-top: 97px;
+}
+
+.about__name {
+    font-size: 40px;
+}
+
+.about__name br {
+    display: none;
+}
+
+.about__avatar {
+    margin-top: 39px;
+}
+
+.about__avatar img {
+    min-width: 384px;
+    min-height: 384px;
+}
+
+.about__info {
+    margin-top: 75px;
+    margin-left: 112px;
+    width: 544px;
+}
+
+.expectations__header {
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 82px;
+    margin-bottom: 38px;
+}
+
+.about__info p {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.contacts__info h1 {
+    margin-left: 32px;
+    font-size: 40px;
+}
+
+.contacts__links {
+    display: flex;
+    width: 100%;
+    margin-left: 32px;
+}
+
+.contacts__links__opportunities {
+    order: -1;
+    flex: 0 0 70%;
+    margin-left: 0;
+    margin-top: 21px;
+}
+
+.contacts__links__options {
+    flex: 0 0 30%;
+    margin-top: 23px;
+}
+
+footer input, textarea {
+    width: 704px;
+    height: 48px;
+}
+
+.contacts__form {
+    margin-left: 32px;
+}
+
+.expectations {
+    text-align: left;
+}
+
+.expectations__list {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.expectations__list__item div {
+    bottom: 2rem;
+}
+
+.expectations__list__item_big {
+    flex: 0 0 52%;
+}
+
+.expectations__list__item_small {
+    flex: 0 0 45%;
+}
+
+.slider-container {
+    width: 704px;
+}
+
+.slides-container {
+    max-width: 704px;
+    height: 496px;
+}
+
+.slider-info-container {
+    width: 704px;
+    flex-flow: row;
+    margin-top: 64px;
+}
+
+.slider-info__description {
+    margin-top: 5px;
+    margin-left: auto;
+}
+
+.slider-info__header {
+    margin-top: 0;
+}
+
+.slider-content-and-controls {
+    width: inherit;
+}
+
+.works {
+    margin-left: 32px;
+}
