@@ -319,6 +319,7 @@ footer input[type=submit] {
     border-radius: 100%;
     display: inline-block;
     background: #DD3E18;
+    cursor: pointer;
 }
 
 #i1-1:checked ~ div .img1-1,
