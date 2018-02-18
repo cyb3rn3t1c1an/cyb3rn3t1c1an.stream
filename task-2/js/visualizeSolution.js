@@ -14,6 +14,10 @@
      * @param {number[][]} map карта островов представленная двумерной матрицей чисел
      */
     function visualizeSolution(map) {
+
+        // если до этого был запущен solution.js, обнуляем счётчик
+        resetCounter();
+
         const matrix = map.map(function (element) {
             return element.slice();
         });
@@ -41,6 +45,7 @@
                 factor++;
                 if (matrix[x][y] === ISLAND) {
                     const randomColor = "#" + Math.random().toString(16).slice(2, 8);
+                    window.setTimeout(() => updateCounter(), factor * DELAY);
                     floodFill(matrix, x, y, factor, randomColor);
                 }
                 y++;
@@ -135,6 +140,23 @@
         window.setTimeout(() => {
             postFunc();
         }, (factor + 1) * DELAY);
+    }
+
+    /**
+     * Увеличить счётчик на 1
+     */
+    function updateCounter() {
+        const counterElement = document.getElementsByClassName("map__res")[0];
+        const count = Number(counterElement.innerText.substring(7));
+        counterElement.innerText = "Count: " + (count + 1);
+    }
+
+    /**
+     * Обнулить счётчик
+     */
+    function resetCounter() {
+        const counterElement = document.getElementsByClassName("map__res")[0];
+        counterElement.innerText = "Count: 0";
     }
 
     root.SHRI_ISLANDS.visualizeSolution = visualizeSolution;
