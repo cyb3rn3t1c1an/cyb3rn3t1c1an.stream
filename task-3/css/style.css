@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+}
+
+.inputs-container {
+    display: flex;
+    flex-flow: column
+}
+
+.map-container {
+    margin-left: auto;
+}
+
+#map {
+    width: 600px; height: 600px;
+}
+
+button {
+    height: 24px;
+}
+
+.mic {
+    height: 24px;
+    width: 24px;
+    background: url("../img/mic.png") no-repeat center;
+}
+
+.surrender-button {
+    color: red;
+    margin-left: 20px;
+}

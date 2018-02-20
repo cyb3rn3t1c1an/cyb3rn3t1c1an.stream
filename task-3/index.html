@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Игра "Города" (только РБ)</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard,package.regions&lang=ru-RU"
+            type="text/javascript"></script>
+
+    <!-- В сети был найден файл со списком городов РБ, он был преобразован в нужный формат с помощью скрипта "cities-group.js." В идеале можно было создать
+         серверную часть и там хранить города, сделать админку с их добавлением и\или написать парсер\клиент какого-нибудь сайта\базы
+     -->
+    <script src="js/cities.js" type="text/javascript"></script>
+    <script src="js/const.js" type="text/javascript"></script>
+    <script src="js/logic.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="container">
+    <div>
+        <div class="inputs-container">
+            <div id="ui">
+                <input type="text" id="cityName">
+                <input type="button" onclick="humanTurn()" value="Ход">
+                <input type="button" onclick="humanSpeechTurn()" class="mic">
+                <input type="button" onclick="gameResult()" class="surrender-button" value="Сдаться">
+            </div>
+            <h1>Ход игры</h1>
+            <div id="log"></div>
+        </div>
+    </div>
+    <div class="map-container">
+        <div id="map"></div>
+    </div>
+</div>
+
+
+</body>
+</html>
